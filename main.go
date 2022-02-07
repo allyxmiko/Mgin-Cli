@@ -82,7 +82,7 @@ func main() {
 			return
 		}
 		fmt.Println("项目创建完成！")
-	case "vsersion":
+	case "version":
 		fmt.Println("Mgin Cli Version 1.0.0")
 	default:
 		fmt.Println("命令错误！不受支持的命令：", action)
