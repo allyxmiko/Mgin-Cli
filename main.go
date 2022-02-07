@@ -42,6 +42,7 @@ func main() {
 	if len(args) == 0 {
 		fmt.Println("帮助信息：")
 		fmt.Println("1. create 创建项目，可以在后面指定项目名称也可以后续手动输入。")
+		fmt.Println("2. version 显示当前脚手架版本信息")
 		return
 	}
 	action := args[0]
@@ -81,6 +82,8 @@ func main() {
 			return
 		}
 		fmt.Println("项目创建完成！")
+	case "vsersion":
+		fmt.Println("Mgin Cli Version 1.0.0")
 	default:
 		fmt.Println("命令错误！不受支持的命令：", action)
 	}
